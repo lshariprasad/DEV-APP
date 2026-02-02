@@ -59,17 +59,17 @@ The mobile app connects to the computer's localhost via a special IP.
 
 ## 🖼️ Pictures
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/e4c229f1-d82d-4762-bef2-e1f34e9e2bfe" />
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/1da46e66-3086-4532-9573-dd9a9f47c817" />
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/2e109f45-709f-4564-8b24-f8a741314afa" />
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/bf7c59a4-cc92-4ba9-827f-41474b504c55" />
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/40f40030-9bdc-4adf-a1ba-4300249a6b53" />
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/ebddfdb9-1a3b-4211-b2a0-298f38c885ba" />
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/8d78fa1c-ffb4-4608-b898-76d598c20517" />
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/7338ba23-e193-4324-a46e-e208184b3ec1" />
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/fec5d483-b117-407f-9771-5880acb92763" />
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/0c30082c-037e-4e68-9689-133889e2dc76" />
 
-
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/d2490d8d-84d0-42b4-a248-fb1f2265f8b6" />
 
 ## 🔗 API Endpoints
 
