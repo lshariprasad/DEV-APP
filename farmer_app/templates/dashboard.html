@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | Smart Harvest{% endblock %}
+
+{% block content %}
+<section class="demo">
+    <h2>📊 Field Analysis Result</h2>
+
+    <p><b>Soil Moisture:</b> {{ soil_moisture }}%</p>
+    <p><b>Temperature:</b> {{ temperature }}°C</p>
+
+    <h3>🚿 Irrigation Status</h3>
+    <p>{{ irrigation }}</p>
+
+    <h3>🦠 Disease Status</h3>
+    <p>{{ disease }}</p>
+
+    <a href="/" class="btn-primary">⬅ Back to Home</a>
+</section>
+{% endblock %}

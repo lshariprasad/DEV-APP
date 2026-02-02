@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dart-code.flutter",
+    "dart-code.dart-code",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "tamasfe.even-better-toml",
+    "usernamehw.errorlens",
+    "eamodio.gitlens"
+  ]
+}

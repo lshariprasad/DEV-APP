@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Smart Farming{% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <span>Smart Harvest</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/upload">Disease Check</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== PAGE CONTENT ===== -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>© 2026 Smart Harvest | AI-Powered Farming Assistant</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+#Flie Needed for context only, no changes made :
+Flask==3.0.0
+requests==2.31.0
+
+# OPTIONAL (AUTO-GENERATE FROM YOUR ENV): 
+pip freeze > requirements.txt
+
+
+# HOW TO TEST IT :
+pip uninstall flask requests -y
+pip install -r requirements.txt
+

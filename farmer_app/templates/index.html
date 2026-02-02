@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Smart Harvest – Intelligent Farming{% endblock %}
+
+{% block content %}
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Smart Decisions for a Better Harvest</h1>
+        <p>
+            An intelligent farming platform that helps farmers decide
+            <b>when to irrigate</b>, monitor <b>crop health</b>,
+            and detect <b>early diseases</b>.
+        </p>
+
+        <a href="#demo" class="btn-primary">Try Live Demo</a>
+    </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="services">
+    <h2>Our Core Services</h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>🚿 Smart Irrigation</h3>
+            <p>Data-driven irrigation decisions based on soil moisture and climate.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Crop Health Monitoring</h3>
+            <p>Track crop condition and prevent over-watering or stress.</p>
+        </div>
+
+        <div class="card">
+            <h3>🦠 Disease Prediction</h3>
+            <p>Early detection of crop diseases using image-based analysis.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+    <div class="stat-box">
+        <h3>300+</h3>
+        <p>Farms Supported</p>
+    </div>
+    <div class="stat-box">
+        <h3>40+</h3>
+        <p>Agri Companies</p>
+    </div>
+    <div class="stat-box">
+        <h3>95%</h3>
+        <p>Decision Accuracy</p>
+    </div>
+</section>
+
+<!-- ===== LIVE DEMO ===== -->
+<section id="demo" class="demo">
+    <h2>Live Irrigation Demo</h2>
+
+    <form action="/analyze" method="post" onsubmit="return validateForm()">
+        <input type="number" id="soil" name="soil_moisture" placeholder="Soil Moisture (%)" required>
+        <input type="number" id="temp" name="temperature" placeholder="Temperature (°C)" required>
+        <button type="submit">Analyze Field</button>
+    </form>
+
+    <p id="network-status"></p>
+</section>
+
+{% endblock %}

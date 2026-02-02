@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+firebase-admin
+# tensorflow-cpu; sys_platform != 'darwin'
+# tensorflow-macos; sys_platform == 'darwin' # Uncomment for Mac
+numpy
+pillow
+pytest
+httpx
