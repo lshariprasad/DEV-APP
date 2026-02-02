@@ -57,6 +57,20 @@ The mobile app connects to the computer's localhost via a special IP.
 3. **Disease Scan**: Interactive camera/gallery interface for leaf analysis with detailed results and solutions.
 4. **Krishi Assistant**: WhatsApp-style chat interface with real-time replies and offline fallbacks.
 
+## 🖼️ Pictures
+
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/e4c229f1-d82d-4762-bef2-e1f34e9e2bfe" />
+
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/2e109f45-709f-4564-8b24-f8a741314afa" />
+
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/40f40030-9bdc-4adf-a1ba-4300249a6b53" />
+
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/8d78fa1c-ffb4-4608-b898-76d598c20517" />
+
+<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/fec5d483-b117-407f-9771-5880acb92763" />
+
+
+
 ## 🔗 API Endpoints
 
 - `GET /`: Health check.
