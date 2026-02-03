@@ -20,6 +20,7 @@ This application addresses the critical needs of farmers by providing:
 
 ## 🛠️ Setup & Run Instructions
 
+
 ### 1. Backend (FastAPI)
 
 The backend provides the intelligence for the application.
