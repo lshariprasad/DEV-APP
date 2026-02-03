@@ -2,8 +2,6 @@
 
 A comprehensive solution for farmers to manage irrigation, monitor crop health, and detect diseases using AI-powered insights. Designed specifically for low-connectivity rural areas.
 
-## 🚀 Overview
-
 This application addresses the critical needs of farmers by providing:
 
 - **Smart Irrigation**: Precision watering recommendations based on sensor data.
