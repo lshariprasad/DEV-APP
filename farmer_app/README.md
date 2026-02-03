@@ -2,6 +2,8 @@
 
 A comprehensive solution for farmers to manage irrigation, monitor crop health, and detect diseases using AI-powered insights. Designed specifically for low-connectivity rural areas.
 
+## 🚀 Overview : 
+
 This application addresses the critical needs of farmers by providing:
 
 - **Smart Irrigation**: Precision watering recommendations based on sensor data.
@@ -9,7 +11,7 @@ This application addresses the critical needs of farmers by providing:
 - **Krishi Assistant**: A rule-based chatbot for immediate farming advice.
 - **Offline-First Design**: Critical features work without an active internet connection using local caching.
 
-## 🏗️ Architecture
+## 🏗️ Architecture :
 
 - **Frontend**: Flutter (Material 3) - Cross-platform mobile app.
 - **Backend**: FastAPI (Python) - High-performance RESTful API.
@@ -56,7 +58,7 @@ The mobile app connects to the computer's localhost via a special IP.
 3. **Disease Scan**: Interactive camera/gallery interface for leaf analysis with detailed results and solutions.
 4. **Krishi Assistant**: WhatsApp-style chat interface with real-time replies and offline fallbacks.
 
-## 🖼️ Pictures
+## 🖼️ Pictures :
 
 <img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/1da46e66-3086-4532-9573-dd9a9f47c817" />
 
@@ -70,14 +72,14 @@ The mobile app connects to the computer's localhost via a special IP.
 
 <img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/d2490d8d-84d0-42b4-a248-fb1f2265f8b6" />
 
-## 🔗 API Endpoints
+## 🔗 API Endpoints :
 
 - `GET /`: Health check.
 - `GET /irrigation/`: Get real-time irrigation recommendations.
 - `POST /disease/predict`: Submit an image for disease analysis.
 - `POST /chat/`: Send a message to the farming assistant.
 
-## 💡 Technical Features
+## 💡 Technical Features :
 
 - **Clean Code**: Follows modular architecture for easy maintenance.
 - **Responsive UI**: Adapts to different screen sizes and orientations.
