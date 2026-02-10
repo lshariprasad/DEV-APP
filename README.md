@@ -47,3 +47,81 @@ After installing Flutter, run this command:
 
 ```bash
 flutter doctor
+```
+
+---
+
+## 📂 Project Structure
+
+DEV-APP/
+│
+├── farmer_app/          # Flutter App Project Folder
+│
+└── README.md            # Main Repository README
+
+---
+
+## 🚀 How to Run Any App (Example: farmer_app)
+
+1️⃣ Open Project Folder
+Go inside the app folder:
+
+```bash
+cd farmer_app
+```
+
+2️⃣ Install Dependencies :
+
+```bash
+flutter pub get
+```
+
+3️⃣ Run the App :
+
+```bash
+flutter run
+```
+
+---
+
+## 📱 Running in Android Studio
+1) Open Android Studio
+2) Click Open
+3) Select the folder: farmer_app/
+4) Wait for Gradle sync
+5) Start Emulator
+6) Click ▶ Run
+
+---
+
+## 💻 Running in VS Code
+1) Open VS Code
+2) Click File → Open Folder
+3) Select: farmer_app/
+4) Press:
+```bash
+flutter pub get
+```
+5) Start emulator or connect mobile
+6) Press F5 to run
+
+---
+
+## 📲 Running on Real Mobile (USB Debugging)
+Android Steps:
+1) Enable Developer Options
+2) Enable USB Debugging
+3) Connect phone to laptop
+Run:
+```bash
+flutter devices
+flutter run
+```
+
+---
+
+
+
+
+
+
