@@ -119,6 +119,33 @@ flutter run
 ```
 
 ---
+## 🔥 Build APK (Release)
+Inside the app folder:
+
+```bash
+flutter build apk --release
+```
+APK will be available at:
+
+txt :
+build/app/outputs/flutter-apk/app-release.apk
+
+---
+
+
+## 🧠 Notes
+Each app will have its own folder
+
+Each app can contain its own README.md for detailed documentation
+
+This repository is only for complete app development projects
+
+⭐ Support
+If you like this repository, give it a ⭐ on GitHub.
+
+---
+
+
 
 
 
