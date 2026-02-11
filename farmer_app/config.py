@@ -16,6 +16,7 @@ class Config:
     ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
 
     # ===== OFFLINE / SYNC CONFIG =====
+    
     SYNC_ENABLED = True
     SYNC_SERVER_URL = os.environ.get(
         "SYNC_SERVER_URL",
