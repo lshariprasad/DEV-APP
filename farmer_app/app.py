@@ -13,6 +13,7 @@ from services.sync_service import sync_to_server
 # ================================
 # APP INITIALIZATION
 # ================================
+
 app = Flask(__name__)
 app.config.from_object(Config)
 
