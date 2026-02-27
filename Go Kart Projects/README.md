@@ -4,6 +4,10 @@
 
 This project is a **Real-Time Multi-Sensor Environmental & Safety Monitoring System** built using **Arduino Mega 2560**.
 
+Thank You for Cirkit Design IBM Website Link : https://app.cirkitdesigner.com/
+
+This is Finaly Version Circuit Diagram Link : https://app.cirkitdesigner.com/project/c6b07012-2e5c-4ac3-8564-523325f02eda
+
 It integrates multiple sensors to monitor:
 
 - 🌡 Non-contact Temperature (MLX90614)
@@ -44,6 +48,20 @@ The system continuously reads real-time data from all sensors and displays the o
 | Breadboard | Standard |
 | Jumper Wires | Male-Male |
 | Power Supply | 5V & 3.3V from Mega |
+
+---
+
+# 🖼️ Picture (Circuit Diagram) 📸
+
+## 1) Main Version Of Circuit Diagram :
+<img width="1600" height="1130" alt="image" src="https://github.com/user-attachments/assets/c719eafb-b99b-4905-8766-4cee41b33e4d" />
+
+## 2) Final Version Of Circuit Diagram :
+<img width="1600" height="1109" alt="image" src="https://github.com/user-attachments/assets/9350bfd0-1a0c-4aa6-93df-2e12003f75cd" />
+
+## 3) Display Of Circuit Diagram :
+<img width="1600" height="849" alt="image" src="https://github.com/user-attachments/assets/48dca9a0-0eeb-435f-a8cc-daabdd36d932" />
+
 
 ---
 
