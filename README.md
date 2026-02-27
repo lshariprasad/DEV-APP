@@ -8,10 +8,10 @@ A collection of full app development projects built using Flutter.
 
 | S.No | App Name   | Description | Made In |
 |------|------------|-------------|---------|
-| 1    | farmer_app | Smart Farming Application built using Flutter and Python to support irrigation management, crop health monitoring, and early disease detection with offline support for rural farmers. | Flutter |
-| 2.0 | AI-Based Multi-Sensor Monitoring System | Multi-sensor real-time monitoring system for temperature, gas, flame, GPS, acceleration and magnetic detection. | Arduino (Embedded C++) |
-| 2.1 | Smart Fire & Gas Alert System | Detects hazardous gas levels and flame presence for industrial safety applications. | Arduino |
-| 2.2 | Smart Vehicle Tracking System | GPS-based real-time location monitoring system. | Arduino + GPS |
+| 1 | farmer_app | Smart Farming Application built using Flutter and Python to support irrigation management, crop health monitoring, and early disease detection with offline support for rural farmers. | Flutter & Python |
+| 2.0 | AI-Based Multi-Sensor Monitoring System | Multi-sensor real-time monitoring system for temperature, gas, flame, GPS, acceleration and magnetic detection. | Embedded Systems (C++) |
+| 2.1 | Smart Fire & Gas Alert System | Detects hazardous gas levels and flame presence for industrial safety applications. | Embedded Systems |
+| 2.2 | Smart Vehicle Tracking System | GPS-based real-time location monitoring system. | Embedded Systems + GNSS ||
 
 ---
 
