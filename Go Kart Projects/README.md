@@ -66,7 +66,7 @@ The system continuously reads real-time data from all sensors and displays the o
 <img width="1600" height="998" alt="image" src="https://github.com/user-attachments/assets/f07aeb0b-3d86-42e1-a1cc-f147e5e6a7a7" />
 
 
-## 4) Video Link :
+## 5) Video Link :
 
 #### 1 ) Display : 
 
