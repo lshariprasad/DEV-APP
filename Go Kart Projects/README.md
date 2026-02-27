@@ -62,6 +62,16 @@ The system continuously reads real-time data from all sensors and displays the o
 ## 3) Display Of Circuit Diagram :
 <img width="1600" height="849" alt="image" src="https://github.com/user-attachments/assets/48dca9a0-0eeb-435f-a8cc-daabdd36d932" />
 
+## 4) Display UI/UX Interface :
+<img width="1600" height="998" alt="image" src="https://github.com/user-attachments/assets/f07aeb0b-3d86-42e1-a1cc-f147e5e6a7a7" />
+
+
+## 4) Video Link :
+
+#### 1 ) Display : 
+
+
+
 
 ---
 
