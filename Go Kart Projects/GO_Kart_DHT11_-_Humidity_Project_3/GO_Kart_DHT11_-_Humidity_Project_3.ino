@@ -1,3 +1,5 @@
+// This is For Humidity Project 3 for Controls of everything !
+
 #include <DHT.h>
 
 #define DHTPIN 7
@@ -21,6 +23,9 @@ void loop() {
     return;
   }
 
+  Serial.println("----------------");
+  delay(100);
+
   Serial.print("Humidity: ");
   Serial.print(humidity);
   Serial.println(" %");
@@ -32,4 +37,3 @@ void loop() {
   Serial.println("----------------");
   delay(2000);
 }
-
