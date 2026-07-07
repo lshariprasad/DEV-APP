@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <MCUFRIEND_kbv.h>
 #include <Adafruit_GFX.h>
 #include <Fonts/FreeSansBold9pt7b.h>
@@ -56,6 +57,8 @@ unsigned long oldLapTimeSec      = 999999;
 unsigned long oldBestLapTimeSec  = 999999;
 unsigned long oldLastLapTimeSec  = 999999;
 unsigned long oldSessionTimeSec  = 999999;
+
+// ----------Over Hall -------
 
 // ---------- GEAR ----------
 int gear    = 1;
