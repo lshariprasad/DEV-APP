@@ -1,91 +1,113 @@
-# Smart Farming Application 🌾
+# Smart Farming Application
 
-A comprehensive solution for farmers to manage irrigation, monitor crop health, and detect diseases using AI-powered insights. Designed specifically for low-connectivity rural areas.
+A prototype smart-farming project combining a Flutter mobile client with Python application services. The repository currently contains a Flask application, a FastAPI backend, local SQLite storage, and optional Firebase Admin integration.
 
-## 🚀 Overview : 
+## Repository components
 
-This application addresses the critical needs of farmers by providing:
+| Path | Purpose |
+|---|---|
+| `app.py` | Flask web application entry point |
+| `config.py` | Flask configuration and local SQLite path |
+| `backend/main.py` | FastAPI application entry point |
+| `backend/routers/` | Irrigation, disease and chat API routes |
+| `backend/services/` | Backend service logic |
+| `backend/requirements.txt` | Python backend dependencies |
+| `mobile_app/` | Flutter mobile application |
+| `database.db` | SQLite database file currently present in the repository |
 
-- **Smart Irrigation**: Precision watering recommendations based on sensor data.
-- **Disease Detection**: AI-driven analysis of crop leaves via mobile camera.
-- **Krishi Assistant**: A rule-based chatbot for immediate farming advice.
-- **Offline-First Design**: Critical features work without an active internet connection using local caching.
+## Prerequisites
 
-## 🏗️ Architecture :
+- Python 3.10 or newer is recommended; use a version compatible with the installed packages.
+- Flutter SDK and Dart for the mobile client.
+- Android Studio or an Android device for running the Flutter app.
+- Arduino IDE is not required for this application.
 
-- **Frontend**: Flutter (Material 3) - Cross-platform mobile app.
-- **Backend**: FastAPI (Python) - High-performance RESTful API.
-- **Local Database**: Hive - Fast NoSQL storage for offline caching.
-- **ML Logic**: Prototype logic for leaf disease analysis (easily swappable with TensorFlow Lite).
+## FastAPI backend
 
-## 🛠️ Setup & Run Instructions
+From the project directory:
 
+```bash
+cd backend
+python -m venv .venv
+```
 
-### 1. Backend (FastAPI)
+Activate the virtual environment, then install dependencies:
 
-The backend provides the intelligence for the application.
+**Windows PowerShell**
+```powershell
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python main.py
+```
 
-1. Navigate to the `backend` folder.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Start the server:
-   ```bash
-   python main.py
-   ```
-   _The API will be available at `http://localhost:8000`._
+**macOS / Linux**
+```bash
+source .venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```
 
-### 2. Frontend (Flutter)
+The FastAPI application starts on port 8000. Interactive API documentation is available at `http://127.0.0.1:8000/docs` while the server is running locally.
 
-The mobile app connects to the computer's localhost via a special IP.
+### Routes currently defined in the FastAPI source
 
-1. Navigate to the `mobile_app` folder.
-2. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-3. Run on Android Emulator:
-   ```bash
-   flutter run
-   ```
-   _Note: The app is pre-configured to connect to `10.0.2.2:8000`, which is the standard bridge to your computer's localhost from an Android emulator._
+| Method | Path | Current behavior |
+|---|---|---|
+| GET | `/` | Returns an API running message |
+| GET | `/irrigation/` | Returns fixed demonstration values |
+| POST | `/irrigation/analyze` | Calculates irrigation status from supplied soil moisture and temperature |
+| POST | `/disease/predict` | Returns a fixed demonstration disease response |
+| POST | `/chat/` | Passes a message to the local farming-advice service |
 
-## 📱 Key Screens
+The disease endpoint currently returns a hard-coded example response (including a confidence string); it does not run a trained model in the inspected route. Treat it as a prototype placeholder, not an agricultural diagnosis. The irrigation GET endpoint also uses mock values; use the POST route to exercise the calculation service.
 
-1. **Login Screen**: Simple email/password entry with a "Continue as Guest" option for accessibility.
-2. **Dashboard**: Vibrant, high-contrast cards showing weather, soil moisture, and quick access to tools.
-3. **Disease Scan**: Interactive camera/gallery interface for leaf analysis with detailed results and solutions.
-4. **Krishi Assistant**: WhatsApp-style chat interface with real-time replies and offline fallbacks.
+## Flask application
 
-## 🖼️ Pictures :
+The separate Flask entry point is `app.py` at the `farmer_app/` root. It uses `config.py`, local SQLite storage and modules under the Flask app's own `utils/`, `models/` and `services/` folders.
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/1da46e66-3086-4532-9573-dd9a9f47c817" />
+Run it from the `farmer_app/` directory after installing its Flask dependencies (a dedicated requirements file for this Flask application is not currently documented):
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/bf7c59a4-cc92-4ba9-827f-41474b504c55" />
+```bash
+python app.py
+```
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/ebddfdb9-1a3b-4211-b2a0-298f38c885ba" />
+The current configuration has development settings. Do not deploy this Flask app publicly without setting a strong secret key, disabling debug mode, reviewing upload handling and securing the sync endpoint.
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/7338ba23-e193-4324-a46e-e208184b3ec1" />
+## Flutter mobile client
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/0c30082c-037e-4e68-9689-133889e2dc76" />
+From the project directory:
 
-<img width="165" height="597" alt="image" src="https://github.com/user-attachments/assets/d2490d8d-84d0-42b4-a248-fb1f2265f8b6" />
+```bash
+cd mobile_app
+flutter pub get
+flutter run
+```
 
-## 🔗 API Endpoints :
+Connect an Android emulator or a supported physical device. The Flutter package manifest includes dependencies for Riverpod, Hive, Firebase, maps, image picking and HTTP requests. Some dependencies and assets may require additional platform configuration; follow Flutter and package setup instructions.
 
-- `GET /`: Health check.
-- `GET /irrigation/`: Get real-time irrigation recommendations.
-- `POST /disease/predict`: Submit an image for disease analysis.
-- `POST /chat/`: Send a message to the farming assistant.
+The mobile README mentions Hive code generation. Run the generator only if the project source contains Hive adapters that require generation:
 
-## 💡 Technical Features :
+```bash
+dart run build_runner build --delete-conflicting-outputs
+```
 
-- **Clean Code**: Follows modular architecture for easy maintenance.
-- **Responsive UI**: Adapts to different screen sizes and orientations.
-- **Graceful Error Handling**: Informative messages for connection issues.
-- **Modern Aesthetics**: Uses Google Fonts (Outfit) and Material 3 design principles for a premium feel.
+## Firebase configuration
 
----
+The FastAPI-side `backend/firebase_config.py` looks for a service-account JSON file using the `FIREBASE_CREDENTIALS` environment variable; if unset, it checks for `serviceAccountKey.json` in the working directory. Do not commit service-account JSON files or expose their contents. Firebase features are disabled when the file is absent.
 
-_Developed for College Submission & Demo purposes._
+## Security and data handling
+
+- Never commit real Firebase service-account credentials, API keys, passwords or production secrets.
+- The existing repository includes `database.db`. Review it for personal or sensitive records before sharing the repository; ignore rules do not remove already tracked files.
+- Python bytecode and cache directories are generated artifacts and should not be committed.
+- The Flask configuration currently contains a development secret fallback and has debug mode enabled. Set a secure environment-provided secret and disable debug before any deployment.
+- The disease prediction route returns mock output. Do not use it to make crop-treatment decisions.
+- The sync route and local API services need authentication, validation and deployment security review before public exposure.
+
+## Current status
+
+This is a development and demonstration repository. The documentation describes source-visible behavior and does not claim that all modules have been tested on real farms or deployed in production.
+
+## Author
+
+Hari Prasad L S — [GitHub profile](https://github.com/lshariprasad)
