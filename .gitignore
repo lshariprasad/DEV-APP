@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+*service-account*.json
+*firebase-adminsdk*.json
+
+# Local databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+*.log
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+coverage/
+
+# Android / IDE
+**/.gradle/
+**/local.properties
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
