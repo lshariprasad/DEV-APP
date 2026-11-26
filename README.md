@@ -1,158 +1,56 @@
-# DEV-APP 🚀
+# DEV-APP — Embedded, Mobile & Smart Farming Projects
 
-A collection of full app development projects built using Flutter.
+A collection of application-development and embedded-system projects by Hari Prasad L S.
 
----
+## Project index
 
-## 📌 Apps Index
+| Project | Location | Technology / focus |
+|---|---|---|
+| Smart Farming Application | `farmer_app/` | Flutter mobile client, Python Flask prototype, FastAPI backend, SQLite and optional Firebase integration |
+| Go Kart multi-sensor monitoring | `Go Kart Projects/` | Arduino Mega 2560 and sensor modules, with individual sketches for DHT11, display, ADXL335, MLX90614, GPS and MQ-series sensors |
 
-| S.No | App Name   | Description | Made In |
-|------|------------|-------------|---------|
-| 1 | farmer_app | Smart Farming Application built using Flutter and Python to support irrigation management, crop health monitoring, and early disease detection with offline support for rural farmers. | Flutter & Python |
-| 2 | Go_kart | Real F2 Car Based To Build For Racing | Machine And Hardware | 
-| 2.0 | AI-Based Multi-Sensor Monitoring System | Multi-sensor real-time monitoring system for temperature, gas, flame, GPS, acceleration and magnetic detection. | Arduino IBM With Android Studio |
-| 2.1 | Smart Fire & Gas Alert System | Detects hazardous gas levels and flame presence for industrial safety applications. | Arduino IBM With Android Studio |
-| 2.2 | Smart Vehicle Tracking System | GPS-based real-time location monitoring system. | Arduino IBM With Android Studio ||
+## Repository layout
 
----
-
-## 🛠 Requirements (Must Install)
-
-| Tool / Software | Purpose |
-|----------------|---------|
-| Flutter SDK | Main framework to build apps |
-| Dart SDK (comes with Flutter) | Programming language |
-| Android Studio | Android SDK + Emulator |
-| VS Code | Lightweight coding + Flutter extensions |
-| Git | Version control & GitHub |
-| Java JDK (17 recommended) | Required for Android builds |
-
----
-
-## 💻 Recommended IDE Setup
-
-### ✅ VS Code (Best for Fast Development)
-Install these extensions:
-- Flutter
-- Dart
-- Android iOS Emulator
-- Error Lens (optional)
-
-### ✅ Android Studio (Best for Emulator + SDK)
-Install these plugins:
-- Flutter
-- Dart
-
----
-
-## ⚙ Flutter Setup Check
-
-After installing Flutter, run this command:
-
-```bash
-flutter doctor
-```
-
----
-
-## 📂 Project Structure
-
+```text
 DEV-APP/
-│
-├── farmer_app/          # Flutter App Project Folder
-│
-└── README.md            # Main Repository README
-
----
-
-## 🚀 How to Run Any App (Example: farmer_app)
-
-1️⃣ Open Project Folder
-Go inside the app folder:
-
-```bash
-cd farmer_app
+├── farmer_app/
+│   ├── app.py                 # Flask application entry point
+│   ├── config.py              # Flask application configuration
+│   ├── backend/               # FastAPI service and routers
+│   ├── mobile_app/            # Flutter mobile application
+│   ├── database.db            # Existing SQLite database file
+│   └── README.md              # Smart Farming project guide
+├── Go Kart Projects/
+│   ├── README.md
+│   └── individual Arduino project folders and sketches
+└── README.md
 ```
 
-2️⃣ Install Dependencies :
+## Smart Farming Application
 
-```bash
-flutter pub get
-```
+The project contains both a Flask application (`farmer_app/app.py`) and a FastAPI service (`farmer_app/backend/main.py`), plus a Flutter client under `farmer_app/mobile_app/`.
 
-3️⃣ Run the App :
+Start with the [Smart Farming project guide](farmer_app/README.md) for setup notes, service entry points and current prototype limitations.
 
-```bash
-flutter run
-```
+## Go Kart multi-sensor monitoring
 
----
+The [Go Kart project guide](Go%20Kart%20Projects/README.md) describes the Arduino Mega 2560 sensor-monitoring setup. The folder contains separate sketches for individual sensor modules. Review the relevant sketch and wiring notes before assembling hardware.
 
-## 📱 Running in Android Studio
-1) Open Android Studio
-2) Click Open
-3) Select the folder: farmer_app/
-4) Wait for Gradle sync
-5) Start Emulator
-6) Click ▶ Run
+## General development tools
 
----
+- Git and GitHub
+- Flutter SDK and Dart for the mobile client
+- Python 3 for the Flask and FastAPI code
+- Arduino IDE for the embedded sketches
+- MATLAB/Arduino libraries and platform dependencies as specified by each project
 
-## 💻 Running in VS Code
-1) Open VS Code
-2) Click File → Open Folder
-3) Select: farmer_app/
-4) Press:
-```bash
-flutter pub get
-```
-5) Start emulator or connect mobile
-6) Press F5 to run
+## Current repository notes
 
----
+- Some generated Python cache files and an SQLite database are already tracked in the repository. Review the database contents before publishing or sharing it; it may contain local application data. The new ignore rules prevent future untracked runtime files from being added, but do not remove files already tracked by Git.
+- The disease-prediction API currently returns a fixed demonstration response; do not interpret it as a validated machine-learning diagnosis.
+- The irrigation GET route returns sample values. Use the POST analysis route for the rule-based calculation.
+- The repository contains prototype and coursework material. Hardware and application behavior should be tested on the target devices before being described as production-ready.
 
-## 📲 Running on Real Mobile (USB Debugging)
-Android Steps:
-1) Enable Developer Options
-2) Enable USB Debugging
-3) Connect phone to laptop
-Run:
-```bash
-flutter devices
-flutter run
-```
+## Author
 
----
-## 🔥 Build APK (Release)
-Inside the app folder:
-
-```bash
-flutter build apk --release
-```
-APK will be available at:
-
-txt :
-build/app/outputs/flutter-apk/app-release.apk
-
----
-
-
-## 🧠 Notes
-Each app will have its own folder
-
-Each app can contain its own README.md for detailed documentation
-
-This repository is only for complete app development projects
-
-⭐ Support
-If you like this repository, give it a ⭐ on GitHub.
-
----
-
-
-
-
-
-
-
-
+Hari Prasad L S — [GitHub profile](https://github.com/lshariprasad)
